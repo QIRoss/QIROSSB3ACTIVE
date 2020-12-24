@@ -11,14 +11,14 @@ namespace QIRoss{
                     );
                 return 1;
             }
-            if(arg[1][arg[1].Length-3]!='.' || arg[2][arg[2].Length-3]!='.'){
-                Console.WriteLine("Error: Active price format: <xx.xx>");
-                return 2;
-            }
-            Api connection = new Api(arg[0],float.Parse(arg[1]),float.Parse(arg[2]));
-            if(!connection.getPrice()){
-                Console.WriteLine("Error: something went wrong.");
-            }
+            // if(arg[1][arg[1].Length-3]!='.' || arg[2][arg[2].Length-3]!='.'){
+            //     Console.WriteLine("Error: Active price format: <xx.xx>");
+            //     return 2;
+            // }
+            // Api connection = new Api(arg[0],float.Parse(arg[1]),float.Parse(arg[2]));
+            // connection.getPrice();
+            Mail test = new Mail();
+            test.CreateTestMessage2();
             return 0;
         }
     }    
